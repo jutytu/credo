@@ -1,11 +1,8 @@
-import numpy as np
-import matplotlib.pyplot as plt
+# Calculating the A factor (increase or decrease in earthquakes intensity compared to the median over the previous
+# 5 days) for the USGS data.
+
 import pandas as pd
-import glob
 import statistics
-import os
-import math
-from time import mktime
 from datetime import datetime, date, timedelta, timezone
 
 def sums(t_0, t_end, P, d, del_t,):
@@ -43,8 +40,6 @@ while n < eq_df.size/4:
         print(n)
         print(list)
         n=n+1
-
-
 
 eq_df['A'] = eq_df[1]/eq_df[3]-1
 eq_df.to_csv('C:/Users/Ja/Downloads/datatime/Data_analysis/eq_data_A.csv', index=False)
