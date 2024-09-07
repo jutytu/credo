@@ -1,13 +1,9 @@
+# Calculating the PDF function for the Oulu Cosmic Ray Station data.
+
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
-import glob
-import statistics
-import os
 import math
-from time import mktime
 from datetime import datetime, date, timedelta, timezone
-import sys
 
 
 def pdf(d, l, t, shift):
