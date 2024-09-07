@@ -1,14 +1,8 @@
-import numpy as np
-import matplotlib.pyplot as plt
+# Concatenating multiple earthquake data files.
+
 import pandas as pd
 import glob
-import statistics
 import os
-import math
-from time import mktime
-from datetime import datetime, date, timedelta, timezone
-import sys
-
 
 usecols = ["time", "latitude", "longitude", "mag"]
 files = os.path.join(r'C:\Users\Ja\OneDrive\Dokumenty\Materiały\credo\eq', "*.csv")
