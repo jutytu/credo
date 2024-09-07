@@ -1,11 +1,10 @@
+# Calculating correlation for earthquakes intensity and cosmic rays intensity changes for a given date.
+
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 import glob
 import statistics
 import os
-import math
-from time import mktime
 from datetime import datetime, date, timedelta, timezone
 import sys
 
