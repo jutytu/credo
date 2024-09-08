@@ -16,7 +16,7 @@ The idea of the analysis was to confirm the results for the Pierre Auger Observa
 consecutive intervals, with intervals set to 5 days and shift set to 15 days. The $t_0$ found was 2014-02-21 22:07:12.
 The same idea was then applied to find the optimal $t_0$ for the Oulu data: 2014-04-02 22:07:12.
 
-1. **Data preparation** 
+1. **Data preparation** \\
 Concatenating multiple earthquake data files, calculatinge the median over intervals of 5 days (concatenate.py, earthquakes.py).
 2. **Calculating correlation**
 Calculating the A, B factors (A.py, B.py) and their correlation (c.py) for the Pierre Auger data.
